@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /orb.me/
+
+# Serve existing files/directories as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Pretty paths -> exported HTML folders
+RewriteRule ^([^.]+)/?$ $1/index.html [L]

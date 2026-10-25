@@ -1,0 +1,22 @@
+{
+  "name": "orb.me",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "NEXT_EXPORT=1 next build",
+    "build:win": "set NEXT_EXPORT=1&& next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "basic-ftp": "^6.2.3"
+  }
+}
